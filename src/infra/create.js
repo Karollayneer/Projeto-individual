@@ -1,21 +1,20 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./database.db');
 
-const CLIENTE_SCHEMA = `
-CREATE TABLE IF NOT EXISTS "Cliente" (
+const PRODUTO_SCHEMA = `
+CREATE TABLE IF NOT EXISTS "Produto" (
     "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
     "nome" varchar(64),
-    "email" varchar(64),
-    "CPF" varchar(64),
-    "endereco" varchar(64)
+    "descrição" varchar(64),
+    "data_de_fabricação" varchar(64)
 );`;
 
-function criarTabelaCliente () {
-    db.run(CLIENTE_SCHEMA, (error) => {
-        if (error) console.log("erro ao criar tabela de clientes");
+function criarTabelaProduto () {
+    db.run(PRODUTO_SCHEMA, (error) => {
+        if (error) console.log("erro ao criar tabela de Produto");
     });
 }
 
 db.serialize( () => {
-    criarTabelaCliente();
+    criarTabelaProduto();
 });
