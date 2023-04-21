@@ -1,12 +1,11 @@
-# Cadastro de Coletores
+# Cadastro de Produto
 
-Este é um simples aplicativo web para cadastro e remoção de coletores, usando ReactJS e uma API RESTful. 
+Este é um simples aplicativo web para cadastro produto, usando ReactJS e uma API RESTful. 
 
 ## Funcionalidades
 
-- Cadastro de coletores com Nome, E-mail, CPF e Data de nascimento
-- Remoção de coletores cadastrados
-- Listagem de coletores cadastrados
+- Cadastro de produto com Nome, Descrição e Data de fabricaçã
+- Listagem de produtos
 
 ## Tecnologias Utilizadas
 
@@ -21,8 +20,3 @@ Este é um simples aplicativo web para cadastro e remoção de coletores, usando
 4. Execute o comando `npm run dev` para iniciar o aplicativo web em modo de desenvolvimento.
 5. Execute o comando `npm start` para iniciar o servidor backend.
 5. Abra o navegador e acesse o endereço `http://localhost:5173` para visualizar o aplicativo.
-
-## Observações
-
-- Certifique-se de que a API RESTful esteja rodando na porta 3000 do `localhost`. Caso contrário, atualize a URL no código para a URL correta.
-- O aplicativo é apenas uma demonstração básica e pode ser aprimorado com validações adicionais e mais recursos, como edição de coletores cadastrados e filtragem de coletores por nome ou CPF.
