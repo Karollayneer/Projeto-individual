@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS "Produto" (
     "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
     "nome" varchar(64),
     "descrição" varchar(64),
-    "data_de_fabricação" varchar(64)
+    "data_de_fabricação" DATETIME(64)
 );`;
 
 function criarTabelaProduto () {

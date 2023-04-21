@@ -5,7 +5,7 @@ const string = `CREATE TABLE Produto(
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         nome TEXT(50), 
         descrição VARCHAR(30),
-        data_de_fabricação INT(11)
+        data_de_fabricação DATETIME(11)
     );`
 
 // //Processamento de sinal
