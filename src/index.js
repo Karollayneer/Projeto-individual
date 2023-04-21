@@ -1,6 +1,6 @@
 // Importando o packages
-const express = require('express')
-const cors = require('cors')
+import express from 'express'
+import cors from 'cors'
 
 // instanciando o servidor
 const app = express()
@@ -10,9 +10,8 @@ app.use(express.json());
 app.use(cors())
 
 // importando os controllers
+import ProdutoController from './backend/controllers/produto-controller.js';
 
-const ProdutoController = require('./controllers/produto-controller.js');
+ProdutoController.rotas(app);
 
-ProdutoController.rotas(app)
-
-module.exports = app
+export default app
